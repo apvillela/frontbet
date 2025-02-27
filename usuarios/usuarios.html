@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard de Usuários</title>
+    <link rel="stylesheet" href="./usuarios.css" />
+    <script src="./usuarios.js" defer></script>
+  </head>
+  <body>
+    <a href="/"> <img src="/assets/logo-menor.png" alt="logo" /> </a>
+    <section class="form-section">
+      <h2>Cadastrar Novo Usuário</h2>
+      <form onsubmit="event.preventDefault(); registerUser();">
+        <div class="linha-form">
+          <h3>Nome:</h3>
+          <input id="nome" placeholder="Digite o nome" required />
+        </div>
+        <div class="linha-form">
+          <h3>E-mail:</h3>
+          <input type="email" id="email" placeholder="Digite o e-mail" required />
+        </div>
+        <div class="linha-form">
+          <h3>Senha:</h3>
+          <input type="password" id="senha" placeholder="Digite sua senha" required />
+        </div>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <section class="form-section">
+      <h2>Buscar Membros</h2>
+      <form onsubmit="event.preventDefault(); searchUsers();">
+        <div class="linha-form">
+          <h3>Termo de busca:</h3>
+          <input id="search-term" placeholder="Digite nome, ID ou e-mail" required />
+        </div>
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <section class="tabela-section">
+      <h2>Lista de Usuários</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabela"></tbody>
+      </table>
+    </section>
+
+    <div id="modal" class="modal hidden">
+      <div class="conteudo-modal">
+        <h2>Editar Usuário</h2>
+        <form onsubmit="event.preventDefault(); updateUser();">
+          <input type="hidden" id="user-id" />
+          <div class="linha-form">
+            <h3>Nome:</h3>
+            <input id="edit-nome" placeholder="Digite o nome" required />
+          </div>
+          <div class="linha-form">
+            <h3>E-mail:</h3>
+            <input type="email" id="edit-email" placeholder="Digite o e-mail" required />
+          </div>
+          <div class="linha-form">
+            <h3>Senha:</h3>
+            <input type="password" id="edit-senha" placeholder="Digite a senha" required />
+          </div>
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

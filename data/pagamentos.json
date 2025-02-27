@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "valor": "100",
+    "data": "2025-02-15",
+    "membroId": 2,
+    "excluido": false
+  },
+  {
+    "id": 2,
+    "valor": "200",
+    "data": "2024-01-16",
+    "membroId": 3,
+    "excluido": false
+  },
+  {
+    "id": 3,
+    "valor": "150",
+    "data": "2025-01-17",
+    "membroId": 1,
+    "excluido": false
+  }
+]

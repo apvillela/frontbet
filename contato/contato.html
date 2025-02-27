@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="./contato.css" />
+    <script src="./contato.js" defer></script>
+</head>
+<body>
+    <a href="/"> <img src="/assets/logo-menor.png" alt="logo" /> </a>
+    <section class="form-section">
+        <h2>Formulário de Contato</h2>
+        <form onsubmit="event.preventDefault(); submitContactForm();">
+            <div class="linha-form">
+                <h3>Nome:</h3>
+                <input id="nome" placeholder="Digite o nome" required />
+            </div>
+            <div class="linha-form">
+                <h3>E-mail:</h3>
+                <input type="email" id="email" placeholder="Digite o e-mail" required />
+            </div>
+            <div class="linha-form">
+                <h3>Tópico:</h3>
+                <input id="topico" placeholder="Digite o tópico" required />
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>

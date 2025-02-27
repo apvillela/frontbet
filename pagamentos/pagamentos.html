@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard de Pagamentos</title>
+    <link rel="stylesheet" href="./pagamentos.css" />
+    <script src="./pagamentos.js" defer></script>
+  </head>
+  <body>
+    <a href="/"> <img src="/assets/logo-menor.png" alt="logo" /> </a>
+    <section class="form-section">
+      <h2>Registrar Novo Pagamento</h2>
+      <form onsubmit="event.preventDefault(); registerPayment();">
+        <div class="linha-form">
+          <h3>ID do Membro:</h3>
+          <input id="membroId" placeholder="Digite o ID do membro" required />
+        </div>
+        <div class="linha-form">
+          <h3>Valor Pago:</h3>
+          <input id="valor" type="number" step="0.01" placeholder="Digite o valor pago" required />
+        </div>
+        <div class="linha-form">
+          <h3>Data do Pagamento:</h3>
+          <input id="data" type="date" required />
+        </div>
+        <button type="submit">Registrar Pagamento</button>
+      </form>
+    </section>
+    <section class="form-section">
+      <h2>Buscar Pagamentos</h2>
+      <form onsubmit="event.preventDefault(); searchPayment();">
+        <div class="linha-form">
+          <h3>Termo de busca:</h3>
+          <input id="search-term" placeholder="Digite ID, valor, data ou nome do membro" />
+        </div>
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+    <section class="tabela-section">
+      <h2>Lista de Pagamentos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID Pagamento</th>
+            <th>Membro</th>
+            <th>Valor</th>
+            <th>Data</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabela"></tbody>
+      </table>
+    </section>
+  </body>
+</html>

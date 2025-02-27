@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nome": "Fulano",
+    "email": "fulano@ifsc.edu.br",
+    "senha": "123456"
+  },
+  {
+    "id": 2,
+    "nome": "Ciclano",
+    "email": "ciclano@ifsc.edu.br",
+    "senha": "123456"
+  },
+  {
+    "id": 3,
+    "nome": "Beltrano",
+    "email": "beltrano@ifsc.edu.br",
+    "senha": "123456"
+  }
+]

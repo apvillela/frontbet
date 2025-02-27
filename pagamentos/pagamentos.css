@@ -1,0 +1,84 @@
+body {
+  font-family: sans-serif;
+  background-color: lightgreen;
+  color: black;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.form-section,
+.tabela-section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.linha-form {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.linha-form h3,
+.linha-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.linha-form input {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.excluir {
+  background-color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  background-color: green;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid green;
+  text-align: left;
+}
+
+img {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}

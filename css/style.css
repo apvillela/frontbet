@@ -1,0 +1,340 @@
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    color: white;
+    overflow-x: hidden;}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: url("../assets/tigrinho.gif") no-repeat center center fixed;
+  background-size: cover;
+  filter: grayscale(30%) brightness(60%);
+  z-index: -1;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  filter: grayscale(30%) brightness(60%);
+  color: white;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0.5em;
+    height: 3em;
+    line-height: 3em;
+    width: auto;
+    margin-bottom: 2rem;
+    filter: grayscale(30%) brightness(60%);
+    color: black;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 1em;
+    font-size: 0.9em;}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0.1em 0.4em;
+    color: rgb(49, 19, 19);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav ul li a:hover {
+    color: white;
+}
+nav ul:last-child {
+    margin-right: 1em;
+}
+
+section {
+  height: 100vh;
+  padding-top: 3em;
+  margin: 0;
+  margin-bottom: 5em;
+}
+
+#um {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+#um h1 {
+    color: orange;
+    font-size: 2em;
+}
+
+#um h2 {
+  color: black;
+}
+
+#um h4 {
+    color: white;
+    font-size: 1.2em;
+}
+
+.botaoEntrarAgora {
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  justify-content: center;
+  padding: 16px 32px;
+  height: 48px;
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botaoEntrarAgora:hover {
+  background-color: #e66a00;
+  transform: translateY(-2px);
+}
+
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  justify-items: center;
+}
+
+.flex-container img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container.column {
+  flex-direction: column;
+}
+
+#dois,
+#naoAposte,
+#somosConfiaveis {
+    padding: 2em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#dois h1,
+#naoAposte h1,
+#somosConfiaveis h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+#dois .flex-container,
+#naoAposte .flex-container,
+#somosConfiaveis .flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#dois .flex-item,
+#naoAposte .flex-item,
+#somosConfiaveis .flex-item {
+  flex: 1;
+  margin: 0 1em;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.247);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#dois .flex-item h2,
+#naoAposte .flex-item h2,
+#somosConfiaveis .flex-item h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#dois .flex-item p,
+#naoAposte .flex-item p,
+#somosConfiaveis .flex-item p {
+  font-size: 1.2em;
+}
+
+footer {
+    background: #333;
+    color: orange;
+    text-align: center;
+    padding: 1em ;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5em; 
+}
+
+.botaoContato {
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 16px 32px;
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botaoContato a {
+  color: white;
+  text-decoration: none;
+}
+
+.botaoContato:hover {
+  background-color: #e66a00;
+  transform: translateY(-2px);
+}
+
+#logo {
+  position: relative;
+  top: 0;
+  left: 0.5em;
+}
+
+#logo img {
+  height: 3em;
+  vertical-align: middle;
+}
+
+.text-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1em;
+  border-radius: 5px;
+  margin: 1em 0;
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.verde {
+  color: green;
+}
+
+#scrollup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#scrollup:hover {
+  background-color: orange;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 740px) {
+  #galeria .flex-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #somosConfiaveis .flex-container,
+  #naoAposte .flex-container,
+  #dois .flex-container {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #logo {
+    display: none;
+  }
+
+  nav ul li {
+    font-size: 0.9em;
+  }
+
+  #somosConfiaveis .flex-container,
+  #naoAposte .flex-container,
+  #dois .flex-container {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  #um h1 {
+    font-size: 1.8em;
+  }
+
+  #um h2 {
+    font-size: 1.2em;
+  }
+
+  #um h4 {
+    font-size: 1em;
+  }
+}

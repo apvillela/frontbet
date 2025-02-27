@@ -1,0 +1,74 @@
+body {
+  font-family: sans-serif;
+  background-color: lightgreen;
+  color: black;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.form-section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+#user-report,
+#payment-report {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table thead {
+  background-color: green;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 5px;
+  border: 1px solid green;
+  text-align: left;
+}
+
+img {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
